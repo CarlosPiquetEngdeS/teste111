@@ -618,6 +618,9 @@
             .footer-container {
                 flex-direction: column;
                 align-items: center;
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
             }
 
             .partners-logos {
@@ -625,8 +628,13 @@
             }
 
             .social {
-                margin: 1em 0;
-                margin-left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5;
+                margin: 1em 0;  
+                margin-left: 20px;                                                           
+                
             }
 
             .donate-button {
@@ -765,8 +773,7 @@
                 <img src="seu logo aqui.png" alt="Logo Parceiro 3">
             </div>
             <div class="social">
-                <button onclick="window.location.href='https://facebook.com'">Facebook</button>
-                <button onclick="window.location.href='https://twitter.com'">Twitter</button>
+                <button onclick="window.location.href='https://facebook.com'">Facebook</button>              
                 <button onclick="window.location.href='https://instagram.com'">Instagram</button>
             </div>
             <a href="pagina_doacao.html" class="donate-button">Doe Agora</a>
