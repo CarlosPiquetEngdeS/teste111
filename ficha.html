@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha de Matrícula do Aluno</title>
+    <title>Ficha de Pré-Matrícula do Aluno</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -133,7 +133,7 @@
 </head>
 <body>
     <div class="form-container" id="form-content">
-        <h2>Ficha de Matrícula do Aluno</h2>
+        <h2>Ficha de Pré-Matrícula do Aluno</h2>
         <form id="fichaForm">
             <h3>Informações Pessoais do Aluno</h3>
             <div style="position: relative;">
@@ -228,11 +228,11 @@
             <input type="text" name="beneficiosSociais" placeholder="Benefícios Sociais (Bolsa Família, etc.)">
 
             <div class="consentimento">
+                <input type="checkbox" name="termos" required>
                 <label>
-                    <input type="checkbox" name="termos" required>Li e concordo com os <a href="#" onclick="abrirModal()">termos e condições</a>.
+                    Li e concordo com os <a href="#" onclick="abrirModal()">termos e condições</a>.
                 </label>
             </div>
-
             <button type="button" onclick="prepararImpressao()">Imprimir</button>
         </form>
     </div>
